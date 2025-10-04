@@ -6,12 +6,49 @@ import { inter, urbanist } from "@/lib/utils/font.util";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cedarsmedicare.vercel.app/"),
-  title: "Cedars Medicare | Leading Healthcare Solutions in Beirut, Lebanon",
+  title: {
+    default:
+      "Cedars Medicare | Leading Healthcare Solutions in Beirut, Lebanon",
+    template: "%s | Cedars Medicare",
+  },
   description:
     "Cedars Medicare offers innovative healthcare solutions, including telemedicine, TPA consultancy, and comprehensive medical services. Committed to quality and patient-centric care, we ensure efficient claims processing and membership management tailored to individual and organizational needs. Trusted by top partners in the healthcare industry.",
+  authors: [{ name: "Cedars Medicare" }],
+  creator: "Cedars Medicare",
+  publisher: "Cedars Medicare",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
-    icon: "/assets/icons/favicon.ico",
-    apple: "/assets/icons/apple-touch-icon.png",
+    icon: [
+      {
+        url: "/assets/icons/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        url: "/assets/icons/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      { url: "/assets/icons/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      {
+        url: "/assets/icons/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/assets/icons/favicon.ico",
   },
 
   openGraph: {
@@ -22,7 +59,7 @@ export const metadata: Metadata = {
     siteName: "Cedars Medicare",
     images: [
       {
-        url: "/assets/meta/meta.png",
+        url: "/assets/images/meta.png",
         width: 1200,
         height: 630,
         alt: "Cedars Medicare - Leading Healthcare Solutions in Beirut, Lebanon",
@@ -37,8 +74,24 @@ export const metadata: Metadata = {
     title: "Cedars Medicare - Leading Healthcare Solutions in Beirut, Lebanon",
     description:
       "Cedars Medicare offers innovative healthcare solutions, including telemedicine, TPA consultancy, and comprehensive medical services. Committed to quality and patient-centric care, we ensure efficient claims processing and membership management tailored to individual and organizational needs. Trusted by top partners in the healthcare industry.",
-    images: ["/assets/meta/meta.png"],
+    images: ["/assets/images/meta.png"],
+    creator: "@cedarsmedicare",
+    site: "@cedarsmedicare",
   },
+
+  verification: {
+    // google: "google-verification-code",
+  },
+
+  alternates: {
+    canonical: "https://cedarsmedicare.vercel.app/",
+    languages: {
+      "en-US": "https://cedarsmedicare.vercel.app/",
+      "ar-LB": "https://cedarsmedicare.vercel.app/ar",
+    },
+  },
+
+  category: "healthcare",
 
   keywords: [
     "Cedars Medicare",
