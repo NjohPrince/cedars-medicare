@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="">
@@ -9,6 +11,13 @@ export default function Home() {
         >
           Welcome to Cedar Medicare
         </h1>
+
+        <Image
+          width={150}
+          height={150}
+          alt="cedars medicare logo"
+          src={"/assets/images/cedars-logo.png"}
+        />
       </main>
     </div>
   );
