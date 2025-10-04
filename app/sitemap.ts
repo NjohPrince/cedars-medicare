@@ -10,7 +10,7 @@ export default async function generateSitemap(): Promise<MetadataRoute.Sitemap> 
 
   const urls: MetadataRoute.Sitemap = [
     {
-      url: "https://cedarsmedicare.com/",
+      url: "https://cedarsmedicare.vercel.app/",
       changeFrequency: "weekly",
       priority: 1,
     },
