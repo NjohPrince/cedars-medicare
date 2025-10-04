@@ -128,6 +128,12 @@ export const metadata: Metadata = {
   ],
 };
 
+/**
+ * The root layout component for the Cedars Medicare website.
+ * It renders the HTML document and sets the font family to Inter and Urbanist.
+ * @param {React.ReactNode} children - The children elements to render inside the HTML document.
+ * @returns {JSX.Element} The root layout component.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
