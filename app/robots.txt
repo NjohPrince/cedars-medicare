@@ -1,0 +1,32 @@
+User-agent: *
+Disallow:
+
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cedarsmedicare.com/
+
+# Sitemaps
+Sitemap: https://cedarsmedicare.com/sitemap.xml
+
+# Crawl Delay for All Bots
+Crawl-delay: 10
+
+# Specific Instructions for Certain Bots
+User-agent: Googlebot
+Disallow: /internal
+
+User-agent: Bingbot
+Disallow: /internal
+
+# Nice-to-Have Configuration
+# Prevent bots from crawling temporary URLs
+Disallow: /*?ref=
+Disallow: /*?utm_source=
+
+# Block access to unnecessary file types
+Disallow: /*.json$
+Disallow: /*.log$
+Disallow: /*.env$
+Disallow: /*.xml$ # except the sitemap
