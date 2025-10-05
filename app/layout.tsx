@@ -5,7 +5,7 @@ import "./globals.css";
 import { inter, urbanist } from "@/lib/utils/font.util";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cedarsmedicare.vercel.app/"),
+  metadataBase: new URL("https://cedarsmedicare-six.vercel.app/"),
   title: {
     default:
       "Cedars Medicare | Leading Healthcare Solutions in Beirut, Lebanon",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Cedars Medicare - Leading Healthcare Solutions in Beirut, Lebanon",
     description:
       "Cedars Medicare offers innovative healthcare solutions, including telemedicine, TPA consultancy, and comprehensive medical services. Committed to quality and patient-centric care, we ensure efficient claims processing and membership management tailored to individual and organizational needs. Trusted by top partners in the healthcare industry.",
-    url: "https://cedarsmedicare.vercel.app/",
+    url: "https://cedarsmedicare-six.vercel.app/",
     siteName: "Cedars Medicare",
     images: [
       {
@@ -84,10 +84,10 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://cedarsmedicare.vercel.app/",
+    canonical: "https://cedarsmedicare-six.vercel.app/",
     languages: {
-      "en-US": "https://cedarsmedicare.vercel.app/",
-      "ar-LB": "https://cedarsmedicare.vercel.app/ar",
+      "en-US": "https://cedarsmedicare-six.vercel.app/",
+      "ar-LB": "https://cedarsmedicare-six.vercel.app/ar",
     },
   },
 

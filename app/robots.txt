@@ -5,10 +5,10 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://cedarsmedicare.vercel.app/
+Host: https://cedarsmedicare-six.vercel.app/
 
 # Sitemaps
-Sitemap: https://cedarsmedicare.vercel.app/sitemap.xml
+Sitemap: https://cedarsmedicare-six.vercel.app/sitemap.xml
 
 # Crawl Delay for All Bots
 Crawl-delay: 10
