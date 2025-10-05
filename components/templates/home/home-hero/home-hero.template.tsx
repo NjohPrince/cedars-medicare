@@ -29,7 +29,7 @@ const HomeHeroTemplate = () => {
         </div>
         <div>
           <ButtonAtom
-            btnText="Book an Appointment"
+            btnText="Get Started Now"
             iconRight={<ForwardArrowIcon size="20" />}
           />
         </div>

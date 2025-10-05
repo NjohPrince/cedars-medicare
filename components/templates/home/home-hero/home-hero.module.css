@@ -12,6 +12,8 @@
 
 .text p {
   font-size: 1.2rem;
+  max-width: 580px;
+  width: 100%;
   color: var(--gray);
 }
 

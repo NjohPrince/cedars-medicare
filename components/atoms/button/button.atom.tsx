@@ -12,7 +12,7 @@ type ButtonAtomProps = {
 const ButtonAtom = ({ btnText, iconLeft, iconRight }: ButtonAtomProps) => {
   return (
     <button
-      aria-label="button"
+      aria-label={btnText}
       className={`${cls.button} ${gbl.flex} ${gbl["gap-8"]} ${gbl.justifyCenter} ${gbl.itemsCenter} ${gbl["t-delay-2"]}`}
     >
       {iconLeft}
