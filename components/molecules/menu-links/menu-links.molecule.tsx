@@ -7,7 +7,15 @@ import { menuList } from "@/lib/data/menu.data";
 import MenuLinkAtom from "@/components/atoms/menu-link/menu-link.atom";
 import ButtonAtom from "@/components/atoms/button/button.atom";
 
-const MenuLinksMolecule = () => {
+type MenuLinksMoleculeProps = {
+  setIsActive?: React.Dispatch<React.SetStateAction<boolean>>;
+  isActive?: boolean;
+};
+
+const MenuLinksMolecule: React.FC<MenuLinksMoleculeProps> = ({
+  setIsActive,
+  isActive,
+}) => {
   return (
     <div className={`${gbl.flex} ${gbl["gap-32"]} ${gbl["items-center"]}`}>
       <ul

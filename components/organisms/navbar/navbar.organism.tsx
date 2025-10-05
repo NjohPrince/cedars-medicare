@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
@@ -5,8 +7,12 @@ import gbl from "../../../app/globals.module.css";
 import cls from "./navbar.module.css";
 
 import MenuLinksMolecule from "@/components/molecules/menu-links/menu-links.molecule";
+import CloseIcon from "@/components/icons/close.icon";
+import BurgerIcon from "@/components/icons/burger.icon";
 
 const NavbarOrganism = () => {
+  const [isActive, setIsActive] = React.useState(false);
+
   return (
     <nav
       role="navigation"
@@ -21,7 +27,16 @@ const NavbarOrganism = () => {
           src={"/assets/images/cedars-logo.png"}
         />
       </div>
-      <MenuLinksMolecule />
+      <div className={`${gbl.flex} ${gbl["gap-24"]} ${gbl["items-center"]}`}>
+        <MenuLinksMolecule setIsActive={setIsActive} isActive={isActive} />
+        <button
+          className={`${gbl.flex} ${gbl["items-center"]} ${cls.menu__toggle}`}
+          aria-label="menu toggle button"
+          onClick={() => setIsActive(!isActive)}
+        >
+          {isActive ? <CloseIcon /> : <BurgerIcon />}
+        </button>
+      </div>
     </nav>
   );
 };

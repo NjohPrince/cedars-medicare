@@ -6,3 +6,7 @@
   width: 170px;
   height: auto;
 }
+
+.menu__toggle {
+  display: none;
+}
