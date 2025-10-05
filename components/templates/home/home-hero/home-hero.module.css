@@ -10,6 +10,22 @@
   font-family: var(--font-primary);
 }
 
+.text .badge {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  font-size: 1rem;
+  padding: 2px 12px;
+  font-weight: 400;
+  background-color: #349a49;
+  border: 1px solid transparent;
+  width: fit-content;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
 .text p {
   font-size: 1.2rem;
   max-width: 580px;
