@@ -28,7 +28,7 @@ const NavbarOrganism = () => {
         />
       </div>
       <div className={`${gbl.flex} ${gbl["gap-24"]} ${gbl["items-center"]}`}>
-        <MenuLinksMolecule setIsActive={setIsActive} isActive={isActive} />
+        <MenuLinksMolecule isActive={isActive} />
         <button
           className={`${gbl.flex} ${gbl["items-center"]} ${cls.menu__toggle}`}
           aria-label="menu toggle button"

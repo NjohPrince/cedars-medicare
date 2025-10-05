@@ -8,18 +8,20 @@ import MenuLinkAtom from "@/components/atoms/menu-link/menu-link.atom";
 import ButtonAtom from "@/components/atoms/button/button.atom";
 
 type MenuLinksMoleculeProps = {
-  setIsActive?: React.Dispatch<React.SetStateAction<boolean>>;
   isActive?: boolean;
 };
 
-const MenuLinksMolecule: React.FC<MenuLinksMoleculeProps> = ({
-  setIsActive,
-  isActive,
-}) => {
+const MenuLinksMolecule: React.FC<MenuLinksMoleculeProps> = ({ isActive }) => {
   return (
-    <div className={`${gbl.flex} ${gbl["gap-32"]} ${gbl["items-center"]}`}>
+    <div
+      className={`${isActive ? gbl["flex-col"] : gbl.flex} ${gbl["gap-32"]} ${
+        gbl["items-center"]
+      }`}
+    >
       <ul
-        className={`${cls.menu__links} ${gbl.flex} ${gbl["gap-24"]} ${gbl.justifyCenter} ${gbl.itemsCenter}`}
+        className={`${cls.menu__links} ${
+          isActive ? gbl["flex-col"] : gbl.flex
+        } ${gbl["gap-24"]} ${gbl.justifyCenter} ${gbl.itemsCenter}`}
       >
         {menuList.map((item) => (
           <li key={item.id}>
