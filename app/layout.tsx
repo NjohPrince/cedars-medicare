@@ -144,7 +144,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${urbanist.variable}`}>
         <NavbarOrganism />
-        {children}
+        <div className="app">{children}</div>
       </body>
     </html>
   );

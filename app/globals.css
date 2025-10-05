@@ -30,6 +30,7 @@
   --accent-foreground: #000408;
 
   --border: #dee2e6;
+  --border-2: transparent;
   --input: #ffffff;
   --ring: #000408;
 
@@ -68,6 +69,7 @@
 
   --primary: #ffffff;
   --primary-foreground: #000408;
+  --gray: #cecece;
 
   --secondary: #a8a8a8;
   --secondary-foreground: #000408;
@@ -79,8 +81,11 @@
   --accent-foreground: #ffffff;
 
   --border: #2a2a2a;
+  --border-2: #2a2a2a;
   --input: #1a1a1a;
   --ring: #ffffff;
+
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.6), 0 18px 40px rgba(0, 0, 0, 0.35);
 }
 
 html {
