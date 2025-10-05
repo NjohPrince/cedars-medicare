@@ -1,0 +1,8 @@
+.navbar {
+  background-color: var(--background);
+}
+
+.logo img {
+  width: 170px;
+  height: auto;
+}

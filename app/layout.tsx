@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { inter, urbanist } from "@/lib/utils/font.util";
+import NavbarOrganism from "@/components/organisms/navbar/navbar.organism";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cedarsmedicare-six.vercel.app/"),
@@ -142,6 +143,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${urbanist.variable}`}>
+        <NavbarOrganism />
         {children}
       </body>
     </html>

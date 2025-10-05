@@ -1,0 +1,112 @@
+.px {
+  padding-inline: 8vw;
+}
+
+.flex {
+  display: flex;
+  display: -ms-flexbox;
+}
+
+.flex-col {
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.items-center {
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+.gap-2 {
+  gap: 2px;
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.px-4 {
+  padding-inline: 4px;
+}
+
+.px-8 {
+  padding-inline: 8px;
+}
+
+.px-16 {
+  padding-inline: 16px;
+}
+
+.px-24 {
+  padding-inline: 24px;
+}
+
+.px-32 {
+  padding-inline: 32px;
+}
+
+.py-4 {
+  padding-block: 4px;
+}
+
+.py-8 {
+  padding-block: 8px;
+}
+
+.py-16 {
+  padding-block: 16px;
+}
+
+.py-24 {
+  padding-block: 24px;
+}
+
+.py-32 {
+  padding-block: 32px;
+}
+
+.t-delay-2 {
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+}
+
+.t-delay-3 {
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}

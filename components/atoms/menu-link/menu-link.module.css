@@ -1,0 +1,9 @@
+.link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.link:hover {
+  color: var(--app-theme-color);
+}

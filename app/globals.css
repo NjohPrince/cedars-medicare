@@ -13,7 +13,6 @@
 :root {
   /* light theme colors */
   --background: #ffffff;
-  --foreground: #000408;
   --surface: #f8f9fa;
   --surface-variant: #e9ecef;
 
@@ -60,11 +59,12 @@
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 350ms ease;
+
+  --app-theme-color: #3d66ff;
 }
 
 .dark {
   --background: #000408;
-  --foreground: #ffffff;
   --surface: #0f0f0f;
   --surface-variant: #1a1a1a;
 
