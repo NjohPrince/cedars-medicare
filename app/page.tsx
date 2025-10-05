@@ -1,7 +1,9 @@
+import HomeHeroTemplate from "@/components/templates/home/home-hero/home-hero.template";
+
 export default function Home() {
   return (
-    <div className="">
-      <main className=""></main>
-    </div>
+    <>
+      <HomeHeroTemplate />
+    </>
   );
 }

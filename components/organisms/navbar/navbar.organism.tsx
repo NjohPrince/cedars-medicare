@@ -30,7 +30,7 @@ const NavbarOrganism = () => {
       <div className={`${gbl.flex} ${gbl["gap-24"]} ${gbl["items-center"]}`}>
         <MenuLinksMolecule isActive={isActive} />
         <button
-          className={`${gbl.flex} ${gbl["items-center"]} ${cls.menu__toggle}`}
+          className={`${gbl["items-center"]} ${cls.menu__toggle}`}
           aria-label="menu toggle button"
           onClick={() => setIsActive(!isActive)}
         >

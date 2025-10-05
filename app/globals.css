@@ -17,6 +17,7 @@
   --surface-variant: #e9ecef;
 
   --primary: #000408;
+  --gray: #545557;
   --primary-foreground: #ffffff;
 
   --secondary: #6c757d;
@@ -50,10 +51,7 @@
   --letter-spacing-base: -0.01em;
 
   /* shadows */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   /* transitions */
   --transition-fast: 150ms ease;
@@ -102,7 +100,7 @@ body {
   overflow-x: hidden;
   font-family: var(--font-secondary), system-ui, -apple-system, sans-serif;
   font-weight: 400;
-  color: var(--foreground);
+  color: var(--primary);
   background-color: var(--background);
   transition: background-color var(--transition-base),
     color var(--transition-base);
@@ -180,7 +178,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--foreground);
+  -webkit-text-fill-color: var(--primary);
   box-shadow: 0 0 0px 1000px var(--input) inset;
   -webkit-box-shadow: 0 0 0px 1000px var(--input) inset;
   transition: background-color 5000s ease-in-out 0s;

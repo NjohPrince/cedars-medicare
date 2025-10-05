@@ -1,5 +1,22 @@
 .px {
-  padding-inline: 8vw;
+  padding-inline: 16vw;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.flex-1 {
+  flex: 1;
+  -ms-flex: 1;
 }
 
 .flex {
@@ -63,6 +80,10 @@
   padding-inline: 8px;
 }
 
+.px-12 {
+  padding-inline: 12px;
+}
+
 .px-16 {
   padding-inline: 16px;
 }
@@ -81,6 +102,10 @@
 
 .py-8 {
   padding-block: 8px;
+}
+
+.py-12 {
+  padding-block: 12px;
 }
 
 .py-16 {
