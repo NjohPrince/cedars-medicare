@@ -7,6 +7,7 @@ import cls from "./home-hero.module.css";
 import ButtonAtom from "@/components/atoms/button/button.atom";
 import StetescopeIcon from "@/components/icons/stetescope.icon";
 import HeartPulseIcon from "@/components/icons/heart-pulse.icon";
+import ForwardArrowIcon from "@/components/icons/forward-arrow.icon";
 
 const HomeHeroTemplate = () => {
   return (
@@ -27,7 +28,10 @@ const HomeHeroTemplate = () => {
           </p>
         </div>
         <div>
-          <ButtonAtom btnText="Book an Appointment" />
+          <ButtonAtom
+            btnText="Book an Appointment"
+            iconRight={<ForwardArrowIcon size="20" />}
+          />
         </div>
 
         <div

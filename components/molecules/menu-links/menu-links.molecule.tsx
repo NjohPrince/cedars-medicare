@@ -6,6 +6,7 @@ import cls from "./menu-links.module.css";
 import { menuList } from "@/lib/data/menu.data";
 import MenuLinkAtom from "@/components/atoms/menu-link/menu-link.atom";
 import ButtonAtom from "@/components/atoms/button/button.atom";
+import ForwardArrowIcon from "@/components/icons/forward-arrow.icon";
 
 type MenuLinksMoleculeProps = {
   isActive?: boolean;
@@ -29,7 +30,10 @@ const MenuLinksMolecule: React.FC<MenuLinksMoleculeProps> = ({ isActive }) => {
           </li>
         ))}
       </ul>
-      <ButtonAtom btnText="Book an Appointment" />
+      <ButtonAtom
+        btnText="Book an Appointment"
+        iconRight={<ForwardArrowIcon size="20" />}
+      />
     </div>
   );
 };
