@@ -21,7 +21,7 @@ const HomeHeroTemplate = () => {
           className={`${gbl.flex} ${gbl["flex-col"]} ${cls.text} ${gbl["gap-16"]}`}
         >
           <div>
-            <span className={`${cls.badge}`}>Your Health. Our Innovation.</span>
+            {/* <span className={`${cls.badge}`}>Your Health. Our Innovation.</span> */}
             <h1>Innovative Healthcare Solutions for You</h1>
           </div>
           <p>
@@ -34,7 +34,6 @@ const HomeHeroTemplate = () => {
           <ButtonAtom
             btnText="Book an Appointment"
             iconRight={<ForwardArrowIcon size="20" />}
-            type="outline"
           />
         </div>
 
