@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 // import Image from "next/image";
 
 import gbl from "../../../app/globals.module.css";
@@ -6,7 +7,6 @@ import cls from "./footer.module.css";
 
 import ButtonAtom from "@/components/atoms/button/button.atom";
 import ForwardArrowIcon from "@/components/icons/forward-arrow.icon";
-import Link from "next/link";
 import FacebookIcon from "@/components/icons/facebook.icon";
 import InstagramIcon from "@/components/icons/instagram.icon";
 import LinkedinIcon from "@/components/icons/linkedin.icon";
