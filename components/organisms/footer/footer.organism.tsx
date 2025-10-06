@@ -34,7 +34,7 @@ const FooterOrganism = () => {
         >
           <h2>CONTACT US</h2>
           <div className={`${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-8"]}`}>
-            <p>+961 1 335 380/1 - +961 81 081 212</p>
+            <p>+961 1 335 380 / +961 81 081 212</p>
             <p>info@cedarsmedicare.com</p>
           </div>
         </div>
