@@ -33,6 +33,7 @@
     display: -ms-flexbox;
     align-items: flex-start;
     justify-content: flex-start;
+    padding-top: 24px;
   }
 
   .menu.active {

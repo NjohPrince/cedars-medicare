@@ -28,7 +28,7 @@ const FooterOrganism = () => {
           width={150}
           height={150}
           alt="cedars medicare logo"
-          src={"/assets/images/cedars-logo.png"}
+          src={"/assets/images/cedars-logo.webp"}
         /> */}
 
           <div className={`${gbl.flex} ${cls.social} ${gbl["gap-16"]}`}>

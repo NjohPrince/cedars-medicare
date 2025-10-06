@@ -59,7 +59,7 @@ const HomeHeroTemplate = () => {
                         width={1920}
                         height={1080}
                         alt="cedars medicare logo"
-                        src={`/assets/images/avatar${index + 1}.jpg`}
+                        src={`/assets/images/avatar${index + 1}.webp`}
                         className={`${gbl["w-full"]} ${gbl["h-full"]}`}
                       />
                     </div>
@@ -87,7 +87,7 @@ const HomeHeroTemplate = () => {
                         width={1920}
                         height={1080}
                         alt="cedars medicare logo"
-                        src={`/assets/images/doctor${index + 1}.png`}
+                        src={`/assets/images/doctor${index + 1}.webp`}
                         className={`${gbl["w-full"]} ${gbl["h-full"]}`}
                       />
                     </div>
@@ -104,7 +104,7 @@ const HomeHeroTemplate = () => {
           width={1920}
           height={1080}
           alt="cedars medicare"
-          src={"/assets/images/doctor2.png"}
+          src={"/assets/images/doctor2.webp"}
         />
       </div>
     </main>

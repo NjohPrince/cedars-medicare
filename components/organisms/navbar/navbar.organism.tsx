@@ -24,7 +24,7 @@ const NavbarOrganism = () => {
           width={150}
           height={150}
           alt="cedars medicare logo"
-          src={"/assets/images/cedars-logo.png"}
+          src={"/assets/images/cedars-logo.webp"}
         />
       </div>
       <div className={`${gbl.flex} ${gbl["gap-24"]} ${gbl["items-center"]}`}>
