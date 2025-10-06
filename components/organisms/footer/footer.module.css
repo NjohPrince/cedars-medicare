@@ -1,6 +1,10 @@
 .footer {
   background-color: var(--app-theme-color);
   color: #fff;
+}
+
+.group,
+.footer {
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
 }

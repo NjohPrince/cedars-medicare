@@ -12,7 +12,7 @@ const FooterOrganism = () => {
     <footer
       className={`${cls.footer} ${gbl["py-64"]} ${gbl["gap-48"]} ${gbl.px} ${gbl.flex} ${gbl["justify-between"]}`}
     >
-      <div className={`${gbl.flex} ${gbl["gap-48"]}`}>
+      <div className={`${gbl.flex} ${gbl["gap-48"]} ${cls.group}`}>
         <div
           className={`${cls.logo} ${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-16"]}`}
         >
