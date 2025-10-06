@@ -174,7 +174,7 @@
 
 @media screen and (max-width: 740px) {
   .text h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .text p {
@@ -186,7 +186,7 @@
   }
 
   .hero {
-    padding-block: 32px !important;
+    padding-block: 20px !important;
   }
 
   .stats {

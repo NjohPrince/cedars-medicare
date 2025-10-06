@@ -10,12 +10,13 @@
 
 @media screen and (max-width: 948px) {
   .menu {
-    position: absolute;
-    top: 120px;
+    position: fixed;
+    top: 90px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 90px);
     background-color: var(--background);
+    background-color: red;
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;

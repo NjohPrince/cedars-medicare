@@ -29,6 +29,14 @@
     display: block;
     cursor: pointer;
   }
+
+  .navbar {
+    height: 90px;
+  }
+
+  .logo img {
+    width: 110px;
+  }
 }
 
 @media screen and (max-width: 740px) {
