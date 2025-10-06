@@ -103,7 +103,7 @@ const HomeHeroTemplate = () => {
         <Image
           width={1920}
           height={1080}
-          alt="cedars medicare logo"
+          alt="cedars medicare"
           src={"/assets/images/doctor2.png"}
         />
       </div>
