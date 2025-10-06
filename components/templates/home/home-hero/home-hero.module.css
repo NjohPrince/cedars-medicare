@@ -187,6 +187,11 @@
 
   .hero {
     padding-block: 20px !important;
+    gap: 16px !important;
+  }
+
+  .text {
+    gap: 12px !important;
   }
 
   .stats {
