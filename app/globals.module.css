@@ -147,3 +147,21 @@
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 1280px) {
+  .px {
+    padding-inline: 6vw !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .px {
+    padding-inline: 32px !important;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .px {
+    padding-inline: 20px !important;
+  }
+}

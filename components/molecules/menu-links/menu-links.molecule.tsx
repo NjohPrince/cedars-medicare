@@ -15,14 +15,14 @@ type MenuLinksMoleculeProps = {
 const MenuLinksMolecule: React.FC<MenuLinksMoleculeProps> = ({ isActive }) => {
   return (
     <div
-      className={`${isActive ? gbl["flex-col"] : gbl.flex} ${gbl["gap-32"]} ${
-        gbl["items-center"]
-      }`}
+      className={`${cls.menu} ${isActive ? cls.active : ""} ${
+        isActive ? gbl["flex-col"] : gbl.flex
+      } ${gbl["gap-32"]} ${gbl["items-center"]}`}
     >
       <ul
         className={`${cls.menu__links} ${
           isActive ? gbl["flex-col"] : gbl.flex
-        } ${gbl["gap-24"]} ${gbl.justifyCenter} ${gbl.itemsCenter}`}
+        } ${gbl["gap-24"]} ${gbl['justify-center']} ${gbl['items-center']}`}
       >
         {menuList.map((item) => (
           <li key={item.id}>
@@ -31,7 +31,7 @@ const MenuLinksMolecule: React.FC<MenuLinksMoleculeProps> = ({ isActive }) => {
         ))}
       </ul>
       <ButtonAtom
-        btnText="Book an Appointment"
+        btnText="Book Appointment"
         iconRight={<ForwardArrowIcon size="20" />}
       />
     </div>

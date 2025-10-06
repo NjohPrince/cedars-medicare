@@ -11,3 +11,25 @@
 .menu__toggle {
   display: none;
 }
+
+@media screen and (max-width: 1792px) {
+  .logo img {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .logo img {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 948px) {
+  .menu__toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 740px) {
+}

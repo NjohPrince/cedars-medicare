@@ -15,7 +15,7 @@ const HomeHeroTemplate = () => {
       className={`${gbl["w-full"]} ${gbl.px} ${gbl["py-48"]} ${cls.hero} ${gbl.flex} ${gbl["gap-32"]}`}
     >
       <div
-        className={`${gbl.flex} ${gbl["flex-1"]} ${gbl["flex-col"]} ${gbl["gap-24"]} ${gbl["justify-center"]}`}
+        className={`${gbl.flex} ${gbl["flex-1"]} ${gbl["flex-col"]} ${gbl["gap-24"]} ${gbl["justify-center"]} ${cls.text__content}`}
       >
         <div
           className={`${gbl.flex} ${gbl["flex-col"]} ${cls.text} ${gbl["gap-16"]}`}
@@ -32,7 +32,7 @@ const HomeHeroTemplate = () => {
         </div>
         <div>
           <ButtonAtom
-            btnText="Book an Appointment"
+            btnText="Book Appointment"
             iconRight={<ForwardArrowIcon size="20" />}
           />
         </div>
