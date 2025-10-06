@@ -11,7 +11,7 @@
 
 .footer h2 {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--font-primary);
 }
 
@@ -84,5 +84,9 @@
 
   .subscribe input {
     font-size: 1rem;
+  }
+
+  .footer h2 {
+    font-size: 1.15rem;
   }
 }

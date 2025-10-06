@@ -21,7 +21,7 @@ const FooterOrganism = () => {
         <div
           className={`${cls.logo} ${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-16"]}`}
         >
-          <h2>CEDARS MEDICARE S.A.R.L</h2>
+          <h2>Cedars Medicare S.A.R.L</h2>
           <p>Innovative solutions for patient-centric healthcare services.</p>
           <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
           {/* <Image
@@ -77,7 +77,7 @@ const FooterOrganism = () => {
         <div
           className={`${cls.logo} ${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-16"]}`}
         >
-          <h2>CONTACT US</h2>
+          <h2>Contact Us</h2>
           <div className={`${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-8"]}`}>
             <p>+961 1 335 380 / +961 81 081 212</p>
             <p>info@cedarsmedicare.com</p>
@@ -87,7 +87,7 @@ const FooterOrganism = () => {
       <div
         className={`${cls.subscribe} ${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-16"]}`}
       >
-        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+        <h2>Subscribe to Our Newsletter</h2>
         <div
           className={`${gbl.flex} ${gbl["w-full"]} ${gbl["flex-col"]} ${gbl["gap-8"]}`}
         >
