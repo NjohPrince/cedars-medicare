@@ -54,3 +54,26 @@
 .subscribe input::placeholder {
   color: #545557;
 }
+
+@media screen and (max-width: 948px) {
+  .footer,
+  .group {
+    gap: 32px;
+  }
+
+  .footer {
+    padding-block: 48px !important;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .footer,
+  .group {
+    gap: 24px;
+  }
+
+  .logo,
+  .subscribe {
+    gap: 12px;
+  }
+}
