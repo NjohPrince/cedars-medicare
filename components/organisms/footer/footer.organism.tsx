@@ -6,6 +6,11 @@ import cls from "./footer.module.css";
 
 import ButtonAtom from "@/components/atoms/button/button.atom";
 import ForwardArrowIcon from "@/components/icons/forward-arrow.icon";
+import Link from "next/link";
+import FacebookIcon from "@/components/icons/facebook.icon";
+import InstagramIcon from "@/components/icons/instagram.icon";
+import LinkedinIcon from "@/components/icons/linkedin.icon";
+import WhatsappIcon from "@/components/icons/whatsapp.icon";
 
 const FooterOrganism = () => {
   return (
@@ -18,16 +23,56 @@ const FooterOrganism = () => {
         >
           <h2>CEDARS MEDICARE S.A.R.L</h2>
           <p>Innovative solutions for patient-centric healthcare services.</p>
-          <p>
-            &copy; {new Date().getFullYear()}. All rights
-            reserved.
-          </p>
+          <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
           {/* <Image
           width={150}
           height={150}
           alt="cedars medicare logo"
           src={"/assets/images/cedars-logo.png"}
         /> */}
+
+          <div className={`${gbl.flex} ${cls.social} ${gbl["gap-16"]}`}>
+            <Link
+              href={"https://www.facebook.com/cedarsmedicare.official"}
+              aria-label="facebook profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <FacebookIcon />
+              </span>
+            </Link>
+            <Link
+              href={"https://www.instagram.com/cedars.medicare"}
+              aria-label="instagram profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <InstagramIcon />
+              </span>
+            </Link>
+            <Link
+              href={"https://www.linkedin.com/company/cedars-medicare/"}
+              aria-label="linkedin profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <LinkedinIcon />
+              </span>
+            </Link>
+            <Link
+              href={"https://wa.me/+96181081212"}
+              aria-label="whatsapp contact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <WhatsappIcon />
+              </span>
+            </Link>
+          </div>
         </div>
         <div
           className={`${cls.logo} ${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-16"]}`}
