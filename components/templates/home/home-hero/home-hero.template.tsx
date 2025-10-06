@@ -12,7 +12,7 @@ import ForwardArrowIcon from "@/components/icons/forward-arrow.icon";
 const HomeHeroTemplate = () => {
   return (
     <main
-      className={`${gbl.container} ${gbl["w-full"]} ${gbl.px} ${gbl["py-32"]} ${cls.hero} ${gbl.flex} ${gbl["gap-32"]}`}
+      className={`${gbl["w-full"]} ${gbl.px} ${gbl["py-48"]} ${cls.hero} ${gbl.flex} ${gbl["gap-32"]}`}
     >
       <div
         className={`${gbl.flex} ${gbl["flex-1"]} ${gbl["flex-col"]} ${gbl["gap-24"]} ${gbl["justify-center"]}`}

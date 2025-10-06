@@ -21,7 +21,7 @@ const ButtonAtom = ({
       aria-label={btnText}
       className={`${cls.button} ${type === "outline" ? cls.outlined : ""} ${
         gbl.flex
-      } ${gbl["gap-8"]} ${gbl.justifyCenter} ${gbl.itemsCenter} ${
+      } ${gbl["gap-8"]} ${gbl["justify-center"]} ${gbl["items-center"]} ${
         gbl["t-delay-2"]
       }`}
     >

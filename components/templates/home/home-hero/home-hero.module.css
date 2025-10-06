@@ -1,3 +1,12 @@
+/* .hero {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f5f7ff 40%,
+    rgba(61, 102, 255, 0.08) 100%
+  );
+} */
+
 .text {
   max-width: 700px;
   width: 100%;

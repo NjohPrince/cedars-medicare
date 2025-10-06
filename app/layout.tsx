@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { inter, urbanist } from "@/lib/utils/font.util";
 import NavbarOrganism from "@/components/organisms/navbar/navbar.organism";
+import FooterOrganism from "@/components/organisms/footer/footer.organism";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cedarsmedicare-six.vercel.app/"),
@@ -145,6 +146,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${urbanist.variable}`}>
         <NavbarOrganism />
         <div className="app">{children}</div>
+        <FooterOrganism />
       </body>
     </html>
   );

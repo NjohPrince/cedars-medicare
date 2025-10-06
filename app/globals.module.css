@@ -1,5 +1,5 @@
 .px {
-  padding-inline: 16vw;
+  padding-inline: 12vw;
 }
 
 .w-full {
@@ -72,6 +72,10 @@
   gap: 32px;
 }
 
+.gap-48 {
+  gap: 48px;
+}
+
 .px-4 {
   padding-inline: 4px;
 }
@@ -118,6 +122,14 @@
 
 .py-32 {
   padding-block: 32px;
+}
+
+.py-48 {
+  padding-block: 48px;
+}
+
+.py-64 {
+  padding-block: 64px;
 }
 
 .t-delay-2 {
