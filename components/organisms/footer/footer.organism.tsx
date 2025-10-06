@@ -42,7 +42,7 @@ const FooterOrganism = () => {
       <div
         className={`${cls.subscribe} ${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-16"]}`}
       >
-        <h2>SUBSCRIBE TO OUR NEWSLETTERS</h2>
+        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
         <div
           className={`${gbl.flex} ${gbl["w-full"]} ${gbl["flex-col"]} ${gbl["gap-8"]}`}
         >
