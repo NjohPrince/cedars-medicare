@@ -185,8 +185,13 @@
     height: 400px !important;
   }
 
+  .hero {
+    padding-block: 32px !important;
+  }
+
   .stats {
     flex-direction: column;
     -ms-flex-direction: column;
+    margin-top: 16px;
   }
 }
