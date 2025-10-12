@@ -39,6 +39,7 @@
   --error: #ff4d4d;
   --warning: #ffc94d;
   --info: #17a2b8;
+  --yellow: #fec01d;
 
   /* status colors with opacity */
   --success-10: rgba(58, 255, 130, 0.1);

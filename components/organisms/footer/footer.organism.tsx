@@ -89,7 +89,7 @@ const FooterOrganism = () => {
       >
         <h2>Subscribe to Our Newsletter</h2>
         <div
-          className={`${gbl.flex} ${gbl["w-full"]} ${gbl["flex-col"]} ${gbl["gap-8"]}`}
+          className={`${gbl.flex} ${gbl["w-full"]} ${gbl["gap-8"]}`}
         >
           <input type="text" placeholder="Enter your email" />
           <ButtonAtom

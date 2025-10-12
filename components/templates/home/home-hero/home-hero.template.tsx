@@ -8,6 +8,7 @@ import ButtonAtom from "@/components/atoms/button/button.atom";
 import StetescopeIcon from "@/components/icons/stetescope.icon";
 import HeartPulseIcon from "@/components/icons/heart-pulse.icon";
 import ForwardArrowIcon from "@/components/icons/forward-arrow.icon";
+import StarIcon from "@/components/icons/star.icon";
 
 const HomeHeroTemplate = () => {
   return (
@@ -18,8 +19,24 @@ const HomeHeroTemplate = () => {
         className={`${gbl.flex} ${gbl["flex-1"]} ${gbl["flex-col"]} ${gbl["gap-24"]} ${gbl["justify-center"]} ${cls.text__content}`}
       >
         <div
-          className={`${gbl.flex} ${gbl["flex-col"]} ${cls.text} ${gbl["gap-16"]}`}
+          className={`${gbl.flex} ${cls.hide} ${gbl["flex-col"]} ${cls.text} ${gbl["gap-16"]}`}
         >
+          <div className={`${cls.desktop} ${gbl["w-full"]}`}>
+            <div
+              className={`${cls.review} ${gbl.flex} ${gbl["items-center"]} ${gbl["gap-4"]}`}
+            >
+              <div
+                className={`${cls.stars} ${gbl.flex} ${gbl["items-center"]} ${gbl["gap-2"]}`}
+              >
+                {Array(5)
+                  .fill(0)
+                  .map((_, index) => (
+                    <StarIcon key={index} size={"16"} color="var(--yellow)" />
+                  ))}
+              </div>
+              <p className={cls.rating}>5.0 (980 Reviews)</p>
+            </div>
+          </div>
           <div>
             {/* <span className={`${cls.badge}`}>Your Health. Our Innovation.</span> */}
             <h1>Innovative Healthcare Solutions for You</h1>
@@ -30,7 +47,7 @@ const HomeHeroTemplate = () => {
             their path to recovery.
           </p>
         </div>
-        <div>
+        <div className={`${cls.hide}`}>
           <ButtonAtom
             btnText="Book Appointment"
             iconRight={<ForwardArrowIcon size="20" />}
@@ -38,7 +55,7 @@ const HomeHeroTemplate = () => {
         </div>
 
         <div
-          className={`${gbl.flex} ${gbl["gap-12"]} ${gbl["px-12"]} ${gbl["py-12"]} ${cls.stats} ${gbl["flex-col"]}`}
+          className={`${gbl.flex} ${gbl["gap-12"]} ${gbl["px-12"]} ${gbl["py-12"]} ${cls.stats}`}
         >
           <div
             className={`${gbl["w-full"]} ${gbl.flex} ${gbl["gap-16"]} ${gbl["items-center"]} ${gbl["justify-between"]} ${gbl["gap-12"]} ${gbl["px-16"]} ${gbl["py-12"]}`}
@@ -100,6 +117,23 @@ const HomeHeroTemplate = () => {
       <div
         className={`${gbl.flex} ${gbl["items-center"]} ${gbl["justify-center"]} ${cls.image} ${gbl["flex-1"]}`}
       >
+        <div className={`${cls.mobile} ${gbl["w-full"]}`}>
+          <div
+            className={`${cls.review} ${gbl["w-full"]} ${gbl.flex} ${gbl["items-center"]} ${gbl["flex-col"]} ${gbl["justify-center"]} ${gbl["gap-4"]}`}
+          >
+            <div
+              className={`${cls.stars} ${gbl.flex} ${gbl["items-center"]} ${gbl["gap-2"]}`}
+            >
+              {Array(5)
+                .fill(0)
+                .map((_, index) => (
+                  <StarIcon key={index} size={"16"} color="var(--yellow)" />
+                ))}
+            </div>
+            <p className={cls.rating}>5.0 (980 Reviews)</p>
+            <h2>Innovative Healthcare Solutions for You</h2>
+          </div>
+        </div>
         <Image
           width={1920}
           height={1080}

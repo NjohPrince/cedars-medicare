@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.desktop {
+  width: 100%;
+}
+
 .text h1 {
   font-size: 4.2rem;
   line-height: 1.1;
@@ -65,7 +69,7 @@
 }
 
 .stats {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
   margin-top: 24px;
 }
@@ -130,6 +134,10 @@
   stroke: var(--gray);
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1792px) {
   .text h1 {
     font-size: 3.6rem;
@@ -162,8 +170,6 @@
   }
 
   .stats {
-    flex-direction: row;
-    -ms-flex-direction: row;
     max-width: 100%;
   }
 
@@ -187,10 +193,34 @@
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
+    position: relative;
+  }
+
+  .mobile {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    padding: 16px;
+    bottom: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .mobile {
+    color: #000;
+  }
+
+  .mobile .rating {
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 0.9rem;
   }
 
   .image img {
-    height: 424px !important;
+    height: 474px !important;
   }
 
   .hero {
@@ -198,6 +228,31 @@
     padding-bottom: 20px !important;
     padding-top: 0;
     gap: 16px !important;
+  }
+
+  .review {
+    padding: 16px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .review h2 {
+    font-size: 1.5rem;
+    line-height: 125%;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    font-weight: 600;
+    margin-top: 12px;
+    font-family: var(--font-primary);
   }
 
   .text {
@@ -212,5 +267,13 @@
     flex-direction: column;
     -ms-flex-direction: column;
     margin-top: 10px;
+  }
+
+  .icon svg {
+    width: 45px;
+  }
+
+  .hide {
+    display: none;
   }
 }

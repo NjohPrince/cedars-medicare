@@ -38,14 +38,16 @@
 }
 
 .subscribe button {
-  background-color: #fff;
-  color: var(--app-theme-color);
+  background-color: #000;
+  color: #fff;
+  width: fit-content;
 }
 
 .subscribe input {
   padding: 0.8rem 1.6rem;
   font-size: 1.1rem;
   font-weight: 500;
+  width: 100%;
   color: #000;
   background-color: #fff;
   border: 2px solid transparent;
@@ -63,6 +65,13 @@
   width: 20px;
   height: 20px;
   fill: #fff;
+}
+
+@media screen and (max-width: 1140px) {
+  .subscribe > div {
+    flex-direction: column !important;
+    -ms-flex-direction: column !important;
+  }
 }
 
 @media screen and (max-width: 948px) {
