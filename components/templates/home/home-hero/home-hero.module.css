@@ -138,6 +138,10 @@
   display: none;
 }
 
+.desktop p {
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 1792px) {
   .text h1 {
     font-size: 3.6rem;

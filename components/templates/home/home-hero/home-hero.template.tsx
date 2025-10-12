@@ -23,7 +23,7 @@ const HomeHeroTemplate = () => {
         >
           <div className={`${cls.desktop} ${gbl["w-full"]}`}>
             <div
-              className={`${cls.review} ${gbl.flex} ${gbl["items-center"]} ${gbl["gap-4"]}`}
+              className={`${cls.review} ${gbl.flex} ${gbl["items-center"]} ${gbl["gap-8"]}`}
             >
               <div
                 className={`${cls.stars} ${gbl.flex} ${gbl["items-center"]} ${gbl["gap-2"]}`}
@@ -34,7 +34,7 @@ const HomeHeroTemplate = () => {
                     <StarIcon key={index} size={"16"} color="var(--yellow)" />
                   ))}
               </div>
-              <p className={cls.rating}>5.0 (980 Reviews)</p>
+              <p className={cls.rating}>5.0 (534+ Reviews)</p>
             </div>
           </div>
           <div>
