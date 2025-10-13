@@ -22,6 +22,10 @@
   line-height: 1.2;
 }
 
+.footer a {
+  font-size: 1rem;
+}
+
 .subscribe {
   max-width: 500px;
   width: 100%;
@@ -96,7 +100,8 @@
     padding: 0.6rem 1.2rem;
   }
 
-  .footer p {
+  .footer p,
+  .footer a {
     font-size: 0.9rem;
   }
 
