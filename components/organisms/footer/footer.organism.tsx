@@ -74,6 +74,19 @@ const FooterOrganism = () => {
             </Link>
           </div>
         </div>
+
+        <div
+          className={`${cls.logo} ${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-16"]}`}
+        >
+          <h2>Quick Links</h2>
+          <div className={`${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-8"]}`}>
+            <Link href={'/'}>Home</Link>
+            <Link href={'/about'}>Services</Link>
+            <Link href={'/about'}>FAQs</Link>
+            <Link href={'/about'}>Events & News</Link>
+          </div>
+        </div>
+
         <div
           className={`${cls.logo} ${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-16"]}`}
         >
@@ -88,9 +101,7 @@ const FooterOrganism = () => {
         className={`${cls.subscribe} ${gbl.flex} ${gbl["flex-col"]} ${gbl["gap-16"]}`}
       >
         <h2>Subscribe to Our Newsletter</h2>
-        <div
-          className={`${gbl.flex} ${gbl["w-full"]} ${gbl["gap-8"]}`}
-        >
+        <div className={`${gbl.flex} ${gbl["w-full"]} ${gbl["gap-8"]}`}>
           <input type="text" placeholder="Enter your email" />
           <ButtonAtom
             btnText="Subscribe"
