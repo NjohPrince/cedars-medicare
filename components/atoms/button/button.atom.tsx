@@ -8,12 +8,14 @@ type ButtonAtomProps = {
   iconLeft?: React.ReactNode;
   iconRight?: React.ReactNode;
   type?: "outline" | "normal";
+  controlType?: "button" | "submit";
 };
 
 const ButtonAtom = ({
   btnText,
   iconLeft,
   iconRight,
+  controlType = "button",
   type,
 }: ButtonAtomProps) => {
   return (
@@ -24,6 +26,7 @@ const ButtonAtom = ({
       } ${gbl["gap-8"]} ${gbl["justify-center"]} ${gbl["items-center"]} ${
         gbl["t-delay-2"]
       }`}
+      type={controlType}
     >
       {iconLeft}
       {btnText}
