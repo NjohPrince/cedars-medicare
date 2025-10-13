@@ -1,5 +1,6 @@
 .book {
   background-color: var(--app-theme-color);
+  height: 80vh;
 }
 
 .book > div {
@@ -14,6 +15,9 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   width: 100%;
+  height: 700px;
+  object-fit: cover;
+  -o-object-fit: cover;
 }
 
 .header h2 {
@@ -30,6 +34,60 @@
   font-size: 1.2rem;
   color: #fff;
   line-height: 130%;
+}
+
+.subscribe button,
+.subscribe input,
+.subscribe textarea {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  width: 100%;
+}
+
+.days button.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.subscribe {
+  margin-top: 32px;
+}
+
+.subscribe button {
+  background-color: #000;
+  color: #fff;
+  width: fit-content;
+}
+
+.subscribe input,
+.subscribe textarea,
+.day__select button {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid transparent;
+}
+
+.subscribe h3 {
+  font-weight: 700;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.subscribe textarea {
+  resize: vertical;
+}
+
+.subscribe input::placeholder,
+.subscribe textarea::placeholder {
+  color: #545557;
 }
 
 @media screen and (max-width: 1792px) {
@@ -68,6 +126,11 @@
 
   .image {
     display: none;
+  }
+
+  .subscribe input,
+  .subscribe textarea {
+    font-size: 1rem;
   }
 }
 
