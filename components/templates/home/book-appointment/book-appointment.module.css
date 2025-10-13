@@ -165,18 +165,14 @@
     flex-direction: column;
     -ms-flex-direction: column;
     gap: 24px;
-    padding-block: 20px;
-  }
-
-  .subscribe input,
-  .subscribe textarea {
-    font-size: 1rem;
+    padding-block: 32px;
   }
 
   .subscribe input,
   .subscribe textarea,
   .day__select button {
     padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
 
   .header {
@@ -188,10 +184,6 @@
   .group {
     flex-direction: column;
     -ms-flex-direction: column;
-  }
-
-  .day__select button {
-    font-size: 1rem;
   }
 
   .subscribe {
