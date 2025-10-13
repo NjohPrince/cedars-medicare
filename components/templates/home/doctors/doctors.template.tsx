@@ -9,7 +9,8 @@ import { doctorsData } from "@/lib/data/doctors.data";
 
 const DoctorsTemplate = () => {
   return (
-    <div
+    <section
+      id="doctors"
       className={`${gbl.px} ${gbl["py-48"]} ${cls.doctors__container} ${gbl.flex} ${gbl["items-center"]} ${gbl["justify-center"]} ${gbl["flex-col"]} ${gbl["gap-48"]}`}
     >
       <div
@@ -43,7 +44,7 @@ const DoctorsTemplate = () => {
             </Slide>
           ))}
       </div>
-    </div>
+    </section>
   );
 };
 
