@@ -101,12 +101,12 @@
   }
 
   .footer p,
-  .footer a {
+  .footer a,
+  .footer button {
     font-size: 0.9rem;
   }
 
-  .footer h2,
-  .footer a {
+  .footer h2 {
     font-size: 1.15rem;
   }
 }
