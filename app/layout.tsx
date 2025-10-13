@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "intersection-observer";
 
 import "./globals.css";
 

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Slide, JackInTheBox, Fade } from "react-awesome-reveal";
 
 import gbl from "../../../../app/globals.module.css";
 import cls from "./home-hero.module.css";
@@ -21,52 +22,61 @@ const HomeHeroTemplate = () => {
         <div
           className={`${gbl.flex} ${cls.hide} ${gbl["flex-col"]} ${cls.text} ${gbl["gap-16"]}`}
         >
-          <div className={`${cls.desktop} ${gbl["w-full"]}`}>
-            <div
-              className={`${cls.review} ${gbl.flex} ${gbl["items-center"]} ${gbl["gap-8"]}`}
-            >
+          <Slide direction="up" triggerOnce>
+            <div className={`${cls.desktop} ${gbl["w-full"]}`}>
               <div
-                className={`${cls.stars} ${gbl.flex} ${gbl["items-center"]} ${gbl["gap-2"]}`}
+                className={`${cls.review} ${gbl.flex} ${gbl["items-center"]} ${gbl["gap-8"]}`}
               >
-                {Array(5)
-                  .fill(0)
-                  .map((_, index) => (
-                    <StarIcon key={index} size={"16"} color="var(--yellow)" />
-                  ))}
+                <div
+                  className={`${cls.stars} ${gbl.flex} ${gbl["items-center"]} ${gbl["gap-2"]}`}
+                >
+                  {Array(5)
+                    .fill(0)
+                    .map((_, index) => (
+                      <StarIcon key={index} size={"16"} color="var(--yellow)" />
+                    ))}
+                </div>
+                <p className={cls.rating}>5.0 (534+ Reviews)</p>
               </div>
-              <p className={cls.rating}>5.0 (534+ Reviews)</p>
             </div>
-          </div>
-          <div>
-            {/* <span className={`${cls.badge}`}>Your Health. Our Innovation.</span> */}
-            <h1>Innovative Healthcare Solutions for You</h1>
-          </div>
-          <p>
-            We blend advanced medicine with heartfelt care, ensuring every
-            patient at Cedars Medicare feels supported, valued, and confident in
-            their path to recovery.
-          </p>
+          </Slide>
+          <Slide direction="up" triggerOnce>
+            <div>
+              {/* <span className={`${cls.badge}`}>Your Health. Our Innovation.</span> */}
+              <h1>Innovative Healthcare Solutions for You</h1>
+            </div>
+          </Slide>
+          <Slide direction="up" delay={200} triggerOnce>
+            <p>
+              We blend advanced medicine with heartfelt care, ensuring every
+              patient at Cedars Medicare feels supported, valued, and confident
+              in their path to recovery.
+            </p>
+          </Slide>
         </div>
         <div className={`${cls.hide}`}>
-          <ButtonAtom
-            btnText="Book Appointment"
-            iconRight={<ForwardArrowIcon size="20" />}
-          />
+          <JackInTheBox triggerOnce delay={400}>
+            <ButtonAtom
+              btnText="Book Appointment"
+              iconRight={<ForwardArrowIcon size="20" />}
+            />
+          </JackInTheBox>
         </div>
 
         <div
           className={`${gbl.flex} ${gbl["gap-12"]} ${gbl["px-12"]} ${gbl["py-12"]} ${cls.stats}`}
         >
-          <div
-            className={`${gbl["w-full"]} ${gbl.flex} ${gbl["gap-16"]} ${gbl["items-center"]} ${gbl["justify-between"]} ${gbl["gap-12"]} ${gbl["px-16"]} ${gbl["py-12"]}`}
-          >
-            <div className={`${gbl.flex} ${gbl["flex-col"]}`}>
-              <span>130+</span> Patients Served
-            </div>
-            <div className={`${cls.icon}`}>
-              <HeartPulseIcon />
-            </div>
-            {/* <div className={`${cls.images} ${gbl.flex}`}>
+          <Fade direction="left" triggerOnce className={`${gbl["w-full"]}`}>
+            <div
+              className={`${gbl["w-full"]} ${gbl.flex} ${gbl["gap-16"]} ${gbl["items-center"]} ${gbl["justify-between"]} ${gbl["gap-12"]} ${gbl["px-16"]} ${gbl["py-12"]}`}
+            >
+              <div className={`${gbl.flex} ${gbl["flex-col"]}`}>
+                <span>130+</span> Patients Served
+              </div>
+              <div className={`${cls.icon}`}>
+                <HeartPulseIcon />
+              </div>
+              {/* <div className={`${cls.images} ${gbl.flex}`}>
               {Array(3)
                 .fill(0)
                 .map((_, index) => {
@@ -83,18 +93,20 @@ const HomeHeroTemplate = () => {
                   );
                 })}
             </div> */}
-          </div>
-          <div
-            className={`${gbl["w-full"]} ${gbl.flex} ${gbl["gap-16"]} ${gbl["items-center"]}  ${gbl["justify-between"]}
+            </div>
+          </Fade>
+          <Fade direction="up" triggerOnce className={`${gbl["w-full"]}`}>
+            <div
+              className={`${gbl["w-full"]} ${gbl.flex} ${gbl["gap-16"]} ${gbl["items-center"]}  ${gbl["justify-between"]}
               ${gbl["gap-12"]} ${gbl["px-16"]} ${gbl["py-12"]}`}
-          >
-            <div className={`${gbl.flex} ${gbl["flex-col"]}`}>
-              <span>50+</span> Expert Doctors
-            </div>
-            <div className={`${cls.icon}`}>
-              <StetescopeIcon />
-            </div>
-            {/* <div className={`${cls.images} ${gbl.flex}`}>
+            >
+              <div className={`${gbl.flex} ${gbl["flex-col"]}`}>
+                <span>50+</span> Expert Doctors
+              </div>
+              <div className={`${cls.icon}`}>
+                <StetescopeIcon />
+              </div>
+              {/* <div className={`${cls.images} ${gbl.flex}`}>
               {Array(3)
                 .fill(0)
                 .map((_, index) => {
@@ -111,7 +123,8 @@ const HomeHeroTemplate = () => {
                   );
                 })}
             </div> */}
-          </div>
+            </div>
+          </Fade>
         </div>
       </div>
       <div
